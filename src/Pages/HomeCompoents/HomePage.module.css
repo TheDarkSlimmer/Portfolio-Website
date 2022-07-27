@@ -1,0 +1,16 @@
+.homeContainer {
+  margin-top: 60px;
+  height: 80vh;
+  text-align: center;
+}
+.myself {
+  width: 370px;
+  border: solid 3px black;
+  border-radius: 50%;
+}
+.homeInfo {
+  font-size: 2.1rem;
+}
+.homeInfo h1 {
+  margin: 20px auto;
+}

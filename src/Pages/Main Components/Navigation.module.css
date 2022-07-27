@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+
+.b1 {
+  background-color: #ffadad;
+}
+.b2 {
+  background-color: #fdffb6;
+}
+.b3 {
+  background-color: #caffbf;
+}
+.navContainer {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navImage {
+  width: 320px;
+}
+.navContainer button {
+  font-family: "Viaoda Libre", cursive;
+  font-size: 1.5rem;
+  font-weight: 1000;
+  padding: 10px 20px;
+  height: 70px;
+  border-radius: 50%;
+  width: 25%;
+  text-align: center;
+  box-shadow: 1px 0px 10px 0px;
+  transition: all 0.2s ease-in-out;
+  border: solid 2.5px black;
+}
+
+.navContainer button:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px 7px 10px 0px;
+  cursor: pointer;
+}
+.navContainer button:active {
+  transform: translateY(1px);
+  box-shadow: 1px 0px 10px 0px;
+}
+.navButtons {
+  width: 700px;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
