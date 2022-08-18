@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
-
 .b1 {
   background-color: #ffadad;
 }
@@ -18,8 +16,8 @@
   width: 320px;
 }
 .navContainer button {
-  font-family: "Viaoda Libre", cursive;
-  font-size: 1.5rem;
+  font-family: 'Gabriola';
+  font-size: 1.8rem;
   font-weight: 1000;
   padding: 10px 20px;
   height: 70px;
@@ -41,7 +39,7 @@
   box-shadow: 1px 0px 10px 0px;
 }
 .navButtons {
-  width: 700px;
+  width: 43.25rem;
   display: flex;
   justify-content: space-around;
   align-self: center;

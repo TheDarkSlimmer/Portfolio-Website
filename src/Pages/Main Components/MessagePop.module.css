@@ -11,6 +11,7 @@
   bottom: 50%;
   right: 40%;
   margin: auto;
+  display: none;
 }
 .sendImg{
     width: 40px;

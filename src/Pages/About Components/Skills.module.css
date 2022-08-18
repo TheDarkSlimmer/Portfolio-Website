@@ -1,0 +1,71 @@
+.skillsContainer {
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  height: 500px;
+  margin-left: 50px;
+}
+.skillsHeader {
+  display: block;
+  margin: 100px auto 0 auto;
+  width: 15rem;
+  font-size: 2.188rem;
+  text-align: center;
+  border: 2px black solid;
+  border-radius: 50px;
+  background-color: #a0c4ff;
+}
+.skills {
+  font-size: 2.188rem;
+  margin-top: 50px;
+}
+.htmlTitle {
+  font-weight: 700;
+}
+.CSSTitle {
+  font-weight: 700;
+}
+.javascriptTitle {
+  font-weight: 700;
+}
+.SkillBar {
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 50%;
+  height: 20px;
+}
+.htmlPercent {
+  width: 95%;
+  background-color: #9bf6ff;
+  height: 16px;
+  border-radius: 100px;
+  animation: progress 1.5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+.CSSPercent {
+  width: 80%;
+  background-color: #9bf6ff;
+  height: 16px;
+  border-radius: 100px;
+  animation-delay: 0.1s;
+  animation: progress 1.5s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+.javascriptPercent {
+  width: 60%;
+  background-color: #9bf6ff;
+  height: 16px;
+  border-radius: 100px;
+  animation: progress 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+@keyframes progress{
+    0%{
+        width: 0;
+        opacity: 1
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
