@@ -1,0 +1,83 @@
+.projectMain {
+  padding-left: 10px;
+  width: 50%;
+}
+
+.experienceMain{
+    padding-left: 10px;
+  width: 50%;
+}
+.projectMain h1 {
+  font-size: 2.5rem;
+  border: 2px black solid;
+  width: 12.5rem;
+  border-radius: 100px;
+  text-align: center;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px 2px black;
+  background-color: #caffbf;
+}
+.experienceMain h1{
+    font-size: 2.5rem;
+  border: 2px black solid;
+  width: 12.5rem;
+  border-radius: 100px;
+  text-align: center;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px 2px black;
+  background-color: #ffc6ff;
+
+}
+.projectDescription p {
+  font-size: 1.5625rem;
+  border-left: 5px dotted black;
+  margin: 50px;
+  padding-left: 20px;
+}
+.experienceDescription p {
+  font-size: 1.5625rem;
+  border-left: 5px dotted black;
+  margin: 50px;
+  padding-left: 20px;
+}
+.experienceMain p{
+    font-size: 1.5625rem;
+    border-left: 5px dotted black;
+    margin: 50px;
+    padding-left: 20px;
+}
+.projectHeaders {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.1875rem;
+}
+.experienceHeaders {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.1875rem;
+}
+.projectHeaders h5 {
+  width: 10.75rem;
+  height: 2.1875rem;
+  text-align: center;
+  padding: 0px 20px;
+  border: 2px black solid;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: lighter;
+  align-self: center;
+  background-color: #bdb2ff;
+}
+.experienceHeaders h5 {
+  width: 20%;
+  height: 2.1875rem;
+  text-align: center;
+  padding: 0px 20px;
+  border: 2px black solid;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: lighter;
+  align-self: center;
+  background-color: #a0c4ff;
+}
+

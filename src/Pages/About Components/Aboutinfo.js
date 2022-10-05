@@ -7,7 +7,7 @@ function Aboutinfo(props) {
       <div className={AboutinfoStyles.aboutBody}>
         <h1 className={AboutinfoStyles.header}>About me</h1>
         <div className={AboutinfoStyles.paragraphs}>
-          <p>{props.paragraph}</p>
+          {props.paragraph}
           <button className={AboutinfoStyles.resumeButton}>Resume</button>
         </div>
       </div>

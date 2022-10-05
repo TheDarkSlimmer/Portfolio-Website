@@ -1,13 +1,14 @@
 .homeContainer {
   margin-top: 60px;
-  height: 80vh;
+  height: 74vh;
   text-align: center;
 }
 .myself {
-  width: 350px;
+  width: 22rem;
   border: solid 3px black;
   border-radius: 50%;
 }
+
 .homeInfo {
   font-size: 2.1rem;
   line-height: 4.5rem;
