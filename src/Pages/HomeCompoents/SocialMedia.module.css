@@ -1,0 +1,9 @@
+.socialMediaMain{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.socialMediaMain button{
+    border-radius: 100px;
+    padding: 5px 10px;
+}

@@ -1,6 +1,7 @@
 import homeStyles from "../HomeCompoents/HomePage.module.css";
 import myself from "../../Images/Me/SocialBook Cartoonizer Baby 3.jpeg";
 import Footer from "../Main Components/Footer";
+import SocialMedia from "./SocialMedia";
 
 function HomePage(props) {
   return (
@@ -20,6 +21,7 @@ function HomePage(props) {
           <h1>A Web Designer and a Front End Developer</h1>
         </div>
       </div>
+      <SocialMedia/>
       <Footer />
     </>
   );
