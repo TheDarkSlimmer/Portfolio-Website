@@ -3,8 +3,8 @@
   width: 50%;
 }
 
-.experienceMain{
-    padding-left: 10px;
+.experienceMain {
+  padding-left: 10px;
   width: 50%;
 }
 .projectMain h1 {
@@ -17,8 +17,8 @@
   box-shadow: 0px 0px 10px 2px black;
   background-color: #caffbf;
 }
-.experienceMain h1{
-    font-size: 2.5rem;
+.experienceMain h1 {
+  font-size: 2.5rem;
   border: 2px black solid;
   width: 12.5rem;
   border-radius: 100px;
@@ -26,7 +26,6 @@
   margin: 50px auto;
   box-shadow: 0px 0px 10px 2px black;
   background-color: #ffc6ff;
-
 }
 .projectDescription p {
   font-size: 1.5625rem;
@@ -40,11 +39,11 @@
   margin: 50px;
   padding-left: 20px;
 }
-.experienceMain p{
-    font-size: 1.5625rem;
-    border-left: 5px dotted black;
-    margin: 50px;
-    padding-left: 20px;
+.experienceMain p {
+  font-size: 1.5625rem;
+  border-left: 5px dotted black;
+  margin: 50px;
+  padding-left: 20px;
 }
 .projectHeaders {
   display: flex;
@@ -57,7 +56,7 @@
   font-size: 2.1875rem;
 }
 .projectHeaders h5 {
-  width: 10.75rem;
+  width: 20%;
   height: 2.1875rem;
   text-align: center;
   padding: 0px 20px;
@@ -80,4 +79,3 @@
   align-self: center;
   background-color: #a0c4ff;
 }
-

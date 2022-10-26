@@ -1,7 +1,9 @@
 .footerdiv{
     margin: 32px auto 0 auto;
     text-align: center;
+
 }
+
 .footerdiv footer{
     font-size: 1.5rem;
 }
