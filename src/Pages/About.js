@@ -1,5 +1,6 @@
 import Aboutinfo from "./About Components/Aboutinfo";
 import Skills from "./About Components/Skills";
+import Footer from "./Main Components/Footer";
 import Navigation from "./Main Components/Navigation";
 
 const aboutMeInfo = [
@@ -25,6 +26,7 @@ function About(props) {
       <Navigation />
       <Skills />
       <Aboutinfo paragraph={paragraphs} />
+      <Footer/>
     </>
   );
 }

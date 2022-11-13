@@ -1,27 +1,21 @@
 import { Fragment } from "react";
 import styles from "../HomeCompoents/SocialMedia.module.css";
-import gitHub from "../.././Images/SocialMedia/github.svg";
-import linkedIn from "../.././Images/SocialMedia/linkedin.svg";
-import twitter from "../.././Images/SocialMedia/twitter.svg";
+import GithubIcon from "../SVG components/GithubIcon";
+import LinkedInIcon from "../SVG components/LinkedInIcon";
+import TwitterIcon from "../SVG components/TwitterIcon";
 
 export default function SocialMedia(props) {
   return (
     <Fragment>
       <div className={styles.socialMediaMain}>
         <span className={styles.gitHub}>
-          <button className={styles.gitHubButton}>
-            <img src={gitHub} alt="github-icon" />
-          </button>
+          <GithubIcon />
         </span>
         <span className={styles.linkedIn}>
-          <button className={styles.linkedInButton}>
-            <img src={linkedIn} alt="linkedin-icon" />
-          </button>
+          <LinkedInIcon />
         </span>
         <span className={styles.twitter}>
-          <button className={styles.twitterButton}>
-            <img src={twitter} alt="twitter-icon" />
-          </button>
+          <TwitterIcon />
         </span>
       </div>
     </Fragment>

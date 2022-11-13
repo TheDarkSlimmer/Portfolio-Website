@@ -11,7 +11,6 @@ function Aboutinfo(props) {
           <button className={AboutinfoStyles.resumeButton}>Resume</button>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
