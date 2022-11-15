@@ -1,0 +1,58 @@
+.contactMain {
+  position: fixed;
+  border: 1px solid black;
+  width: 65%;
+  height: 45rem;
+  z-index: 5;
+  left: 18%;
+  top: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 30px;
+  background-color: #dad4ff;
+}
+.contactInputs {
+  border-left: 1px solid black;
+  width: 50%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.contactInputs form{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contactInputs input,
+.contactInputs textarea {
+  display: block;
+  margin: 0.2rem auto;
+}
+.contactInputs input{
+    width: 60%;
+    height: 1.5rem;
+    padding: .8rem;
+}
+.contactInputs:focus{
+  background-color: red;
+  outline: none;
+  border: 1px solid ;
+}
+.contactInputs textarea{
+    resize: none;
+    height: 7rem;
+    width: 60%;
+}
+.contactInputs button{
+margin-top: 1rem;
+width: 50%;
+height: 2rem;
+}
+.errorMessage{
+  color: red;
+  font-weight: 600;
+}

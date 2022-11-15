@@ -1,9 +1,11 @@
+:root{
+  --background-color: #ffecc8,
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-color: #ffecc8;
   font-family: "Gabriola";
