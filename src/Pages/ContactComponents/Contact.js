@@ -2,20 +2,20 @@ import { Fragment } from "react";
 import styles from "./Contact.module.css";
 import { useState, useReducer } from "react";
 
-function errorReducer(action) {
+function errorReducer(state, action) {
   if (action.type === "Name") {
     return {
-      nameValid: true,
+      nameIsValid: true,
       message: "Name is required",
     };
   } else if (action.type === "Email") {
     return {
-      emailValid: true,
+      emailIsValid: true,
       message: "Email is required",
     };
   } else if (action.type === "Message") {
     return {
-      messageValid: true,
+      messageIsValid: true,
       message: "Please type a message",
     };
   }
@@ -27,9 +27,9 @@ export default function Contact(props) {
   const [message, setMessage] = useState("");
 
   const errorInitialState = {
-    nameValid: false,
-    emailValid: false,
-    messageValid: false,
+    nameIsValid: false,
+    emailIsValid: false,
+    messageIsValid: false,
     message: "",
   };
   const [errorState, dispatchError] = useReducer(
@@ -75,7 +75,7 @@ export default function Contact(props) {
               onChange={(e) => setName(e.target.value)}
               value={name}
             ></input>
-            {errorState.nameValid && (
+            {errorState.nameIsValid && (
               <span className={styles.errorMessage}>{errorState.message}</span>
             )}
 
@@ -85,7 +85,7 @@ export default function Contact(props) {
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             ></input>
-            {errorState.emailValid && (
+            {errorState.emailIsValid && (
               <span className={styles.errorMessage}>{errorState.message}</span>
             )}
             <label>Message</label>
@@ -93,7 +93,7 @@ export default function Contact(props) {
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             />
-            {errorState.messageValid && (
+            {errorState.messageIsValid && (
               <span className={styles.errorMessage}>{errorState.message}</span>
             )}
             <button>Send</button>
