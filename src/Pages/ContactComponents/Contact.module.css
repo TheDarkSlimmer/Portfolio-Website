@@ -1,6 +1,7 @@
 .contactMain {
   position: fixed;
-  border: 1px solid black;
+  box-shadow: 1px 0px 10px 0px rgba(207, 194, 255, 0.472);
+  box-shadow: ;
   width: 65%;
   height: 45rem;
   z-index: 5;
@@ -8,51 +9,80 @@
   top: 10%;
   background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   border-radius: 30px;
-  background-color: #dad4ff;
+  background-color: rgb(247, 245, 255);
 }
 .contactInputs {
-  border-left: 1px solid black;
   width: 50%;
   display: flex;
   gap: 1rem;
   justify-content: center;
   align-items: center;
 }
-.contactInputs form{
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.contactInputs form {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .contactInputs input,
 .contactInputs textarea {
   display: block;
   margin: 0.2rem auto;
 }
-.contactInputs input{
-    width: 60%;
-    height: 1.5rem;
-    padding: .8rem;
+.contactInputs input {
+  width: 75%;
+  height: 2rem;
+  padding: 0.8rem;
+  border-radius: 20px;
 }
-.contactInputs:focus{
-  background-color: red;
-  outline: none;
-  border: 1px solid ;
+.contactInputs textarea {
+  resize: none;
+  height: 7rem;
+  width: 75%;
+  padding: 0.8rem;
+  border-radius: 20px;
 }
-.contactInputs textarea{
-    resize: none;
-    height: 7rem;
-    width: 60%;
+.nameInput,
+.emailInput,
+.messageInput {
+  border: none;
+  background-color: #8b76ff14;
 }
-.contactInputs button{
-margin-top: 1rem;
-width: 50%;
-height: 2rem;
+.nameInput:focus,
+.emailInput:focus,
+.messageInput:focus {
+  outline: 1px solid #bdb2ff;
+  background-color: #8b76ff14;
 }
-.errorMessage{
+.nameInputInvalid,
+.emailInputInvalid,
+.messageInputInvalid {
+  outline: 1px solid red;
+  border: none;
+}
+.contactInputs button {
+  margin-top: 1rem;
+  width: 50%;
+  height: 2rem;
+  border-radius: 20px;
+  background-color: #b05cff;
+  border: 1px solid rgb(159, 57, 255);
+  font-size: 1.3rem;
+  font-family: "Gabriola";
+  transition: all 0.2s ease-in-out;
+}
+.contactInputs button:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px 7px 10px 0px rgba(176, 92, 255, 0.513);
+  cursor: pointer;
+}
+.contactInputs button:active {
+  transform: translateY(1px);
+  box-shadow: 1px 0px 10px 0px #8400ff;
+}
+.errorMessage {
   color: red;
-  font-weight: 600;
 }

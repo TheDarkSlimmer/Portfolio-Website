@@ -1,0 +1,17 @@
+.UIMain img{
+    width: 200px;
+    height: 200px;
+}
+.UIMain {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.informationMain{
+    width: 80%;
+    text-align: center;
+    font-size: 1.2rem;
+}

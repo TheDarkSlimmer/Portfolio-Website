@@ -1,6 +1,11 @@
 import { Fragment } from "react";
 import styles from "./Contact.module.css";
 import { useState, useReducer } from "react";
+import ImageUI from "./ImageUI";
+
+function initializer(errorInitialState) {
+  return errorInitialState;
+}
 
 function errorReducer(state, action) {
   if (action.type === "Name") {
@@ -18,6 +23,8 @@ function errorReducer(state, action) {
       messageIsValid: true,
       message: "Please type a message",
     };
+  } else if (action.type === "reset") {
+    return initializer(action.payload);
   }
 }
 
@@ -34,12 +41,12 @@ export default function Contact(props) {
   };
   const [errorState, dispatchError] = useReducer(
     errorReducer,
-    errorInitialState
+    errorInitialState,
+    initializer
   );
 
   function submitForm(event) {
     event.preventDefault();
-
     if (!name.length) {
       dispatchError({ type: "Name" });
       return;
@@ -52,6 +59,7 @@ export default function Contact(props) {
       dispatchError({ type: "Message" });
       return;
     }
+
     const data = {
       name: name,
       email: email,
@@ -64,15 +72,51 @@ export default function Contact(props) {
     setMessage("");
   }
 
+  function nameInputHnadler(event) {
+    setName(event.target.value);
+    if (name.length > 4) {
+      dispatchError({
+        type: "reset",
+        payload: errorInitialState,
+      });
+    }
+  }
+
+  function emailInputHandler(event) {
+    setEmail(event.target.value);
+    if (email.length) {
+      dispatchError({
+        type: "reset",
+        payload: errorInitialState,
+      });
+    }
+  }
+  function messageHandler(event) {
+    setMessage(event.target.value);
+    if (message.length) {
+      dispatchError({
+        type: "reset",
+        payload: errorInitialState,
+      });
+    }
+  }
+
+
   return (
     <Fragment>
       <div className={styles.contactMain}>
+        <ImageUI/>
         <div className={styles.contactInputs}>
           <form onSubmit={submitForm}>
             <label>Name</label>
             <input
+              className={
+                errorState.nameIsValid
+                  ? `${styles.nameInputInvalid}`
+                  : `${styles.nameInput}`
+              }
               type="text"
-              onChange={(e) => setName(e.target.value)}
+              onChange={nameInputHnadler}
               value={name}
             ></input>
             {errorState.nameIsValid && (
@@ -82,16 +126,26 @@ export default function Contact(props) {
             <label>Email</label>
             <input
               type="email"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={emailInputHandler}
               value={email}
+              className={
+                errorState.emailIsValid
+                  ? `${styles.emailInputInvalid}`
+                  : `${styles.emailInput}`
+              }
             ></input>
             {errorState.emailIsValid && (
               <span className={styles.errorMessage}>{errorState.message}</span>
             )}
             <label>Message</label>
             <textarea
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={messageHandler}
               value={message}
+              className={
+                errorState.messageIsValid
+                  ? `${styles.messageInputInvalid}`
+                  : `${styles.messageInput}`
+              }
             />
             {errorState.messageIsValid && (
               <span className={styles.errorMessage}>{errorState.message}</span>
