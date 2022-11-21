@@ -1,6 +1,29 @@
 .socialMediaMain {
   display: flex;
   justify-content: center;
-  gap: 1rem;
-  margin: .7rem 0;
+  gap: 2rem;
+  margin: 0.7rem 0;
+}
+.socialMediaMain span {
+  width: 3.31rem;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 25px;
+  background-color: #9f39ff;
+  cursor: pointer;
+  border: 1px solid #9f39ff;
+  transition: all 0.1s ease-in-out;
+}
+.socialMediaMain span:hover {
+  transform: translateY(-2px);
+  box-shadow: 1px 7px 10px 0px rgba(176, 92, 255, 0.513);
+}
+.socialMediaMain span:active {
+  transform: translateY(1px);
+  box-shadow: 1px 0px 10px 0px #8400ff;
+}
+.socialMediaIcons {
+  width: 30px;
+  height: 30px;
+  fill: white;
 }

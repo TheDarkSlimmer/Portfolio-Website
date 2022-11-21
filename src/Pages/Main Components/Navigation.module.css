@@ -10,7 +10,7 @@
   background-color: #caffbf;
 }
 .navContainer {
-  margin: 10px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -51,4 +51,8 @@ font-family: 'Yellowtail', cursive;
   display: flex;
   justify-content: space-around;
   align-self: center;
+}
+.logo{
+  width: 330px;
+  height: 90px;
 }

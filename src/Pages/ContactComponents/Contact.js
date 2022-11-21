@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import styles from "./Contact.module.css";
 import { useState, useReducer } from "react";
 import ImageUI from "./ImageUI";
+import { GrFormClose } from "react-icons/gr";
 
 function initializer(errorInitialState) {
   return errorInitialState;
@@ -28,7 +29,7 @@ function errorReducer(state, action) {
   }
 }
 
-export default function Contact(props) {
+export default function Contact({ closeContactBox }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -100,12 +101,13 @@ export default function Contact(props) {
       });
     }
   }
-
-
   return (
     <Fragment>
       <div className={styles.contactMain}>
-        <ImageUI/>
+        <span className={styles.closeButton}>
+          <GrFormClose className={styles.closeButtonIcon} onClick={closeContactBox} />
+        </span>
+        <ImageUI />
         <div className={styles.contactInputs}>
           <form onSubmit={submitForm}>
             <label>Name</label>

@@ -1,21 +1,21 @@
 import { Fragment } from "react";
 import styles from "../HomeCompoents/SocialMedia.module.css";
-import GithubIcon from "../SVG components/GithubIcon";
-import LinkedInIcon from "../SVG components/LinkedInIcon";
-import TwitterIcon from "../SVG components/TwitterIcon";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineTwitter } from "react-icons/ai";
 
 export default function SocialMedia(props) {
   return (
     <Fragment>
       <div className={styles.socialMediaMain}>
         <span className={styles.gitHub}>
-          <GithubIcon />
+          <AiFillGithub className={styles.socialMediaIcons} />
         </span>
         <span className={styles.linkedIn}>
-          <LinkedInIcon />
+          <FaLinkedinIn className={styles.socialMediaIcons} />
         </span>
         <span className={styles.twitter}>
-          <TwitterIcon />
+          <AiOutlineTwitter className={styles.socialMediaIcons} />
         </span>
       </div>
     </Fragment>

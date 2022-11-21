@@ -15,6 +15,10 @@ function HomePage(props) {
     setOpenContact(true)
   }
 
+  function closeContactBox(){
+    setOpenContact(null);
+    setOpenModal(null)
+  }
   // function closeContactHandler() {
   //   setOpenContact(null);
   //   setOpenModal(null);
@@ -23,12 +27,12 @@ function HomePage(props) {
   return (
     <>
       {ReactDOM.createPortal(
-        openContact && <Contact/>,
-        document.getElementById('contact-root')
+        openContact && <Contact closeContactBox={closeContactBox} />,
+        document.getElementById("contact-root")
       )}
       {ReactDOM.createPortal(
-        openModal && <Modal/>,
-        document.getElementById('modal-root')
+        openModal && <Modal />,
+        document.getElementById("modal-root")
       )}
       <div className={homeStyles.homeContainer}>
         <div className={homeStyles.imgContainer}>
@@ -36,7 +40,6 @@ function HomePage(props) {
             src={myself}
             className={homeStyles.myself}
             alt="Ama Odoom cartoon"
-            onClick={openModalHandler}
           />
         </div>
         <div className={homeStyles.homeInfo}>

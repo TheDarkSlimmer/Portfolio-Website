@@ -6,7 +6,10 @@ export default function Message({ openContactBox }) {
   return (
     <Fragment>
       <div className={styles.messageMain}>
-        <button className={styles.messageButton} onClick={openContactBox}>
+        <button
+          className={styles.messageButton}
+          onClick={openContactBox}
+        >
           Contact Me
           <img src={envelope} alt="envelope" className={styles.envelope}></img>
         </button>
